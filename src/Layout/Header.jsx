@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.webp";
+import "../Layout/Header.scss";
 
 const Header = () => {
     return (

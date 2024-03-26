@@ -1,0 +1,40 @@
+.homeSection__socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 1rem;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                color: #000000;
+                background-color: #fff;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                transition: transform 0.2s ease-in-out, color 0.2s, background-color 0.2s;
+            }
+
+            a:hover {
+                background-color: #d39d38;
+                color: #fff;
+                transform: translateY(-4px);
+            }
+
+        }
+    }
+}
+
