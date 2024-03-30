@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
@@ -8,10 +8,11 @@ import Skills from "../components/Skills/Skills";
 import Contact from "../components/Contact/Contact";
 import Header from "../Layout/Header";
 
+
 function RoutesPath() {
     return (
         <Router>
-            <div className="routes">
+            <div classname="routes">
                 <Header />
                 <Routes>
                     <Route exact path="/" element={<Home />}/>
@@ -24,5 +25,7 @@ function RoutesPath() {
         </Router>
     );
 };
+
+
 
 export default RoutesPath;

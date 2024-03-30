@@ -1,8 +1,11 @@
 import React from "react";
+import '../Portfolio/Portfolio.scss';
 
 const Portfolio = () => {
     return (
-        <div>portfolio</div>
+        <section id="portfolio">
+            <div className="portfolio">portfolio</div>
+        </section>
     );
 };
 

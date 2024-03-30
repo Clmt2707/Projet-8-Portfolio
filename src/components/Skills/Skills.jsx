@@ -1,8 +1,11 @@
 import React from "react";
+import '../Skills/Skills.scss';
 
 const Skills = () => {
     return (
-        <div>skills</div>
+        <section id="skills">
+            <div className="skills">skills</div>
+        </section>
     );
 };
 
