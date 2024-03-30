@@ -17,6 +17,11 @@ const About = () => {
                         <p>A passionate cook for more than eight years, I recently launched into web development. Merging experience in cooking and a strong interest in development, I bring my experience in time management, teamwork and attention to detail. I am constantly on the lookout for new opportunities to learn and push my limits.</p>
                     </div>
                 </div>
+                <div className="about__button">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        Download my CV
+                    </a>
+                </div>
             </div>
         </section>
     );
