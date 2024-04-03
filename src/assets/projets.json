@@ -1,0 +1,47 @@
+
+[
+    {
+        "title":"Booki",
+        "image":"images/Booki/Booki_1.webp",
+        "description":" L'objectif a été de créer un site Internet permettant aux utilisateurs de trouver des hébergements et des activités dans différentes villes. J'ai été chargé d'intégrer les maquettes(Figma) du site en utilisant HTML et CSS. Site responsive. Versionnage du projet sur Git.",
+        "techno":["HTML", "CSS", "Github"],
+        "github":"https://github.com/Clmt2707/OpenClassRoomsProject.git",
+        "images": ["","",""]
+    },
+   
+    {
+        "title":"Sophie Bluel",
+        "image":"images/Sophie_Bluel/Sophie_Bluel_1.webp",
+        "description":"Missionner pour réaliser le site portfolio d'une architecte. Mes objectifs étaient de développer la page de présentation des travaux avec Javascript (gestion des évènements et manipulation du DOM),la page de connexion avec HTML, CSS et JS, ainsi que concevoir une modale avec JS.",
+        "techno":["HTML", "CSS" , "Javascript"],
+        "github":"https://github.com/Clmt2707/Projet-3-Sophie-Buel.git",
+        "images": ["","",""]
+    },
+
+    {
+        "title":"Nina Carducci",
+        "image":"images/Nina_Carducci_1.webp",
+        "description":"Missionner pour optimiser le référencement d'un site Web de photographie en améliorant sa performance et son accessibilité. Identification et correction des problèmes. Déboggage du site également.Mise en place du référencement local (Schema.org) et des métadonnées pour les réseaux sociaux.",
+        "techno":["Lighthouse","Wave","HTML"],
+        "github":"https://github.com/Clmt2707/Projet5_NinaCarducci.git",
+        "images": ["","",""]
+    },
+
+    {
+        "title":"Kasa",
+        "image":"images/Kasa/Kasa_1.webp",
+        "description":"Projet pour Kasa,une entreprise de location d'appartements entre particuliers, je suis chargé d'implémenter le front-end d'une application en utilisant React, React Router et SASS pour créer une expérience utilisateur moderne et réactive. Configuration des routes, création de composants React et gestion de fonctionnalités.",
+        "techno":["React", "CRA", "React-router", "SASS"],
+        "github":"https://github.com/Clmt2707/Projet-6-KASA.git",
+        "images": ["","",""]
+    },
+
+    {
+        "title":"Mon vieux grimoire",
+        "image":"images/Mon_vieux_grimoire/Mon_vieux_grimoire_1.webp",
+        "description":"Dans ce projet pour un site de notation de livres Mon vieux Grimoire, je suis responsable du back-end. Création du serveur avec Express, connexion à la base de donnée et modélisation des données avec Mongoose. Mise en place des opérations CRUD en suivant l'architecture MVC. Sécurisation des données, gestion du téléchargement des fichiers et optimisation des images. Green Code appliqué au projet.",
+        "techno":["Express", "Mongoose", "MVC", "Green Code"],
+        "github":"https://github.com/Clmt2707/Projet-7-Mon-vieux-Grimoire.git",
+        "images": ["","",""]
+    }
+]

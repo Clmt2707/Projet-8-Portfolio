@@ -16,9 +16,9 @@ function Header() {
           <ul>
             <li><Link activeClass="active" to="home" spy smooth offset={-100} duration={500}>Home</Link></li>
             <li><Link activeClass="active" to="about" spy smooth offset={-100} duration={500}>About</Link></li>
-            <li><Link activeClass="active" to="portfolio" spy smooth duration={500}>Portfolio</Link></li>
-            <li><Link activeClass="active" to="skills" spy smooth duration={500}>Skills</Link></li>
-            <li><Link activeClass="active" to="contact" spy smooth offset={-70} duration={500}>Contact</Link></li>
+            <li><Link activeClass="active" to="portfolio" spy smooth offset={-100} duration={500}>Portfolio</Link></li>
+            <li><Link activeClass="active" to="skills" spy smooth offset={-100} duration={500}>Skills</Link></li>
+            <li><Link activeClass="active" to="contact" spy smooth offset={-100} duration={500}>Contact</Link></li>
           </ul>
         </nav>
       </header>
