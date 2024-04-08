@@ -6,7 +6,7 @@ import Project from "../Projet/Projet";
 const Portfolio = () => {
     return (
         <section id="portfolio">
-            <h2>Portfolio</h2>
+            <h2>Projets</h2>
             <div className="portfolio">
                 {projetsData.map((projet, index) => (
                     <Project key={index} projet={projet} />
