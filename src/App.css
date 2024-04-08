@@ -9,7 +9,9 @@
 
 body {
   width: 100%;
-  margin: auto;
-  background-color: #28282B;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #000000;
   overflow-y: scroll;
+  overflow-x: hidden;
 }

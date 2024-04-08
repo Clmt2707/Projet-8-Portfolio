@@ -8,12 +8,10 @@
     justify-content: center;
     padding: 0 2rem;
     background: #000000;  /* fallback for old browsers */
-    background: linear-gradient(to bottom,#000000, #434343);
+    background: linear-gradient(to right,#000000, #434343);
     background-position: center;
     background-size: cover;
-    border-bottom: 2px solid #000000;
  
-
     h1 {
         color: #fff;
         font-size: 3rem;
@@ -38,6 +36,48 @@
             width: 15rem;
             height: auto;
             object-fit: cover;
+        }
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 1.5rem;
+        max-width: 1440px;
+        width: 100%;
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+    
+            li {
+                margin: 0 1rem;
+    
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35px;
+                    height: 35px;
+                    color: #000000;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    font-size: 1.5rem;
+                    transition: transform 0.2s ease-in-out, color 0.2s, background-color 0.2s;
+                }
+    
+                a:hover {
+                    background-color: #d39d38;
+                    color: #fff;
+                    transform: translateY(-4px);
+                }
+    
+            }
         }
     }
 }

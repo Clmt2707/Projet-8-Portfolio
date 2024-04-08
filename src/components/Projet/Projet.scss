@@ -1,13 +1,14 @@
 .project {
-    background-color: #434343;
+    background-color:  #191919;
     padding: 20px;
-    width: 400px;
-    height: 575px;
+    width: 350px;
+    height: 520px;
     border-radius: 8px;
     transition: transform 0.3s ease;
     text-align: center;
     overflow: hidden;
     margin: 20px;
+    margin-top: 40px;
     position: relative;
         
     &:hover {
@@ -33,7 +34,7 @@
         height: 85%;
         border-radius: 8px;
         margin-bottom: 20px;
-       /* object-fit: cover;*/
+        /*object-fit: cover;*/
     }
 
     h3 {

@@ -3,8 +3,10 @@
 .header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
+    max-width: 1440px;
+    transform: translateX(-50%);
     background-color: #000000;
     display: flex;
     justify-content: space-between;
@@ -44,5 +46,44 @@
                 }
             }
         }
+    }
+
+    &__menu-toggle {
+        display: none;
+    }
+
+    &__menu-bar {
+        width: 25px;
+        height: 3px;
+        background-color: #f5f5f5;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    &__menu-toggle.active .header__menu-bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    &__menu-toggle.active .header__menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    &__menu-toggle.active .header__menu-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 6px); 
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav ul {   
+        display: none;
+    }
+
+    .header__nav ul.active {
+        display: flex;
+    }
+
+    .header__menu-toggle {
+        display: block;
+        cursor: pointer;
     }
 }

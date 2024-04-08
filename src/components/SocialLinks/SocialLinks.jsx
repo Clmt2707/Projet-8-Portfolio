@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import "../SocialLinks/SocialLinks.scss";
+
 const SocialLinks = () => {
     return (
-        <div className="homeSection__socials">    
+        <div className="socials">    
             <ul>
                 <li>
                     <a

@@ -1,12 +1,13 @@
 #portfolio {
-    margin: 20px;
+    padding: 40px;
+    background-color: #28282b;/*#0f0e0e;*/
 
     h2 {
         font-size: 30px;
         color: #f5f5f5;
-        margin: 50px 0;
         text-align: center;
         position: relative;
+        margin-top: 20px;
 
         &::after {
             content: '';
