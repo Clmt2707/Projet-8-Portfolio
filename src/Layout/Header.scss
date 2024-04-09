@@ -1,0 +1,113 @@
+//Header style
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1440px;
+    transform: translateX(-50%);
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin: 0 1rem;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: #d39d38;
+                        cursor: pointer;
+                    }
+
+                    &.active {
+                        color: #d39d38; 
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    @media screen and (max-width: 768px) {
+        height: 80px;
+
+        &__nav {
+            position: fixed;
+            width: 40%;
+            top: 30%;
+            right: 0;
+            background-color: transparent;
+            border-left: 2px solid #191919;
+            border-bottom: 2px solid #191919;
+            transition: transform 0.3s ease-in-out;
+           /* transform: translateY(-100%);*/
+           transform: translateX(0%);
+            z-index: -1;
+
+            &.active {
+                transform: translateX(0);
+            }
+
+            ul {
+                flex-direction: column;
+            
+                li {
+                    padding: 0.5rem 1rem;
+                    font-size: 14px
+                }
+            } 
+        }
+
+        &__menu-toggle {
+            position: absolute;
+            top: 9px;
+            right: 15px;
+            cursor: pointer;
+            z-index: 999;
+ 
+            .header__menu-bar {
+                width: 30px;
+                height: 3px;
+                background-color: #f5f5f5;
+                border-radius: 10px;
+                margin-bottom: 5px;
+                transition: transform 0.3s ease-in-out;
+
+                &.open:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+
+                &.open:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &.open:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+.skill {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #28282B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    &__icon {
+        color: #d28d29;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        color: #f5f5f5;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    @media screen and (max-width:768px) {
+        width:100px;
+        height: 100px;
+
+        &__icon {
+            margin: 0;
+        }
+
+        span {
+            font-size: 15px;
+        }
+    }
+}
