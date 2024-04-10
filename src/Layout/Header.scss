@@ -47,67 +47,72 @@
             }
         }
     }
+&__menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    z-index: 1100;
 
-    
+    .header__menu-bar {
+      width: 30px;
+      height: 2.5px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      margin: 5px 0;
+      transition: transform 0.3s ease;
+    }
+  }
 
-    @media screen and (max-width: 768px) {
-        height: 80px;
+  @media screen and (max-width: 768px) {
+    &__menu-toggle {
+        display: block;
+    }
 
-        &__nav {
-            position: fixed;
-            width: 40%;
-            top: 30%;
-            right: 0;
-            background-color: transparent;
-            border-left: 2px solid #191919;
+    &__nav {
+        position: fixed;
+        top: 30%;
+        right: 0;
+        background-color: transparent;
+        border-left: 2px solid #191919;
+        padding-left: 5px;
+        width: 40%;
+        transition: transform 0.3s ease;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+
+        ul {
+            flex-direction: column;
+
+            li {
+                margin: 5px 0;
+                font-size: 14px;
+            }
+         }
+            //slide du menu de navigation
+        &.active {
+            max-height: 200px;
             border-bottom: 2px solid #191919;
-            transition: transform 0.3s ease-in-out;
-           /* transform: translateY(-100%);*/
-           transform: translateX(0%);
-            z-index: -1;
-
-            &.active {
-                transform: translateX(0);
-            }
-
-            ul {
-                flex-direction: column;
-            
-                li {
-                    padding: 0.5rem 1rem;
-                    font-size: 14px
-                }
-            } 
-        }
-
-        &__menu-toggle {
-            position: absolute;
-            top: 9px;
-            right: 15px;
-            cursor: pointer;
-            z-index: 999;
- 
-            .header__menu-bar {
-                width: 30px;
-                height: 3px;
-                background-color: #f5f5f5;
-                border-radius: 10px;
-                margin-bottom: 5px;
-                transition: transform 0.3s ease-in-out;
-
-                &.open:nth-child(1) {
-                    transform: translateY(8px) rotate(45deg);
-                }
-
-                &.open:nth-child(2) {
-                    opacity: 0;
-                }
-
-                &.open:nth-child(3) {
-                    transform: translateY(-8px) rotate(-45deg);
-                }
-            }
         }
     }
 
-}
+    //rotation du burger
+    &.active {
+        .header__menu-bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .header__menu-bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .header__menu-bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+  }
+} 
