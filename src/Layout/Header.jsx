@@ -4,7 +4,7 @@ import SmallLogo from "../assets/logo_small.webp";
 import "../Layout/Header.scss";
 import { Link } from "react-scroll";
 import { useState } from "react";
-
+import Hamburger from 'hamburger-react';
 
 function Header() {
     //Gestion de l'état du menu hamburger
@@ -38,10 +38,8 @@ function Header() {
           </ul>
         </nav>
         <div className={`header__menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-            <div className="header__menu-bar"></div>
-            <div className="header__menu-bar"></div>
-            <div className="header__menu-bar"></div>
-          </div>
+          <Hamburger size={24} color="#f5f5f5" toggled={isOpen} toggle={setIsOpen} />
+        </div>
       </header>
     );
   }

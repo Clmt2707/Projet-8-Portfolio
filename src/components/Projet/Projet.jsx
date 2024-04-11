@@ -1,9 +1,9 @@
 import React from "react";
 import '../Projet/Projet.scss';
 
-const Project = ({ projet }) => {
+const Project = ({ projet, onClick }) => {
     return(
-        <div className="project">
+        <div className="project" onClick={onClick}>
             <img src={require(`../../assets/images/${projet.image}`)} alt={projet.title}/>
             <h3>{projet.title}</h3>
         </div>

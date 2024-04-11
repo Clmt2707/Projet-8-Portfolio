@@ -46,11 +46,20 @@
 
         &__image {
             flex: 1;
+
+            img {
+                border-radius: 50%;
+
+                @media screen and (max-width:768px){
+                    width: 300px;
+                }
+            }
         }
 
         &__content {
             flex: 1;
-            text-align: left;
+            text-align: justify;
+            line-height: 23px;
             color: #fff;
             padding: 10px 10px;
             border-radius: 5px;
@@ -74,7 +83,7 @@
     }
 
     &__button {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
 
         a {
             display: inline-block;

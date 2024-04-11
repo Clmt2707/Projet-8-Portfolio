@@ -55,15 +55,6 @@
     top: 25%;
     right: 0;
     z-index: 1100;
-
-    .header__menu-bar {
-      width: 30px;
-      height: 2.5px;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-      margin: 5px 0;
-      transition: transform 0.3s ease;
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -93,25 +84,10 @@
                 font-size: 14px;
             }
          }
-            //slide du menu de navigation
+        //slide du menu de navigation
         &.active {
             max-height: 200px;
             border-bottom: 2px solid #191919;
-        }
-    }
-
-    //rotation du burger
-    &.active {
-        .header__menu-bar:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        .header__menu-bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .header__menu-bar:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
         }
     }
   }
