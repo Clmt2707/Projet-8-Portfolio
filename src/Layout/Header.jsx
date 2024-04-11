@@ -30,8 +30,8 @@ function Header() {
         </div>
         <nav className={`header__nav ${isOpen ? 'active' : ''}`}>
           <ul>
-            <li><Link activeClass="active" to="home" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link activeClass="active" to="about" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>About</Link></li>
+            <li><Link activeClass="active" to="home" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Accueil</Link></li>
+            <li><Link activeClass="active" to="about" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>À propos</Link></li>
             <li><Link activeClass="active" to="portfolio" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Portfolio</Link></li>
             <li><Link activeClass="active" to="skills" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Skills</Link></li>
             <li><Link activeClass="active" to="contact" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Contact</Link></li>

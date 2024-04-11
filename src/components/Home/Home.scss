@@ -15,19 +15,25 @@
     @media screen and (min-width:768px) {
         flex-direction: row;
     }
-    
+  
     h1 {
         color: #f5f5f5;
         font-size: 3rem;
         margin-bottom: 1rem;
         width: 80%;
-        /*text-align: left !important;*/
         z-index: 1;
-        
 
         @media screen and (max-width:768px) {
             font-size: 2.4rem;
+            width: 100%;
+            text-align: center;
         }
+
+        @media screen and (max-width:390px) {
+            font-size: 1.5rem;
+            padding-top: 20px;
+        }
+
     }
 
     span {
@@ -35,13 +41,25 @@
     }
 
     img {
-            position: absolute;
-            left: 55%;
-            width: 30rem;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
+        width: 25rem;
+        border-radius: 50%;
+        object-fit: cover;
+        padding-top: 25px;
+
+        @media screen and (min-width: 768px) {
+                position: absolute;
+                left: 55%;
+                width: 30rem;
+                height: auto;
+                padding-top: 0;
+            }  
+
+        @media screen and (max-width:390px) {
+            width: 21rem;
+            padding-top: 0;
         }
+        
+    }
     
 
     .socials {

@@ -1,7 +1,12 @@
 import React from "react";
+import emailjs from 'emailjs-com';
 import '../Contact/Contact.scss';
 
 const Contact = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <section id="contact">
             <h2>Contact</h2>

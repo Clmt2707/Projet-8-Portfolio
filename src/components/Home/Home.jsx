@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <section id="home">
             <div className="homeSection">
-                <h1>Hello,<br />I'm Clement Deboeuf.<br />
-                <span>Web Developper</span></h1>
+                <h1>Salut,<br />Je suis Clément Deboeuf.<br />
+                <span>Développeur web</span></h1>
                 <img src={photo} alt="Sticker représentant Clement Deboeuf" />
                 <SocialLinks />
             </div>
