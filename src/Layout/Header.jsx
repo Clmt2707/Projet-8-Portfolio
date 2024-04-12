@@ -25,7 +25,7 @@ function Header() {
       <header className="header">
         <div className="header__logo">
             <a href="home">
-                <img src={ image} alt="Logo" />
+                <img src={ image} alt="logo de clement deboeuf" />
             </a>
         </div>
         <nav className={`header__nav ${isOpen ? 'active' : ''}`}>

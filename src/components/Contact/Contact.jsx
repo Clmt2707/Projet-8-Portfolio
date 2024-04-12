@@ -31,9 +31,12 @@ const Contact = () => {
             <h2>Contact</h2>
             <p>N'hésitez pas à me contacter</p>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Nom" />
-                <input type="email" name="email" placeholder="Adresse e-mail"/>
-                <textarea name="message" placeholder="Votre message"/>
+                <label htmlFor="name" className="hidden">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Nom" />
+                <label htmlFor="email" className="hidden">Adresse email</label>
+                <input type="email" id="email" name="email" placeholder="Adresse e-mail"/>
+                <label htmlFor="message" className="hidden">Votre message</label>
+                <textarea id="message" name="message" placeholder="Votre message"/>
                 <button type="submit">Me contacter</button>
             </form>
         </section>

@@ -45,6 +45,16 @@
         padding: 10px;
         border-radius: 5px;
 
+        .hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            padding: 0;
+            color: #f5f5f5;
+            clip: rect(0, 0, 0, 0);
+        }
+
         input[type="text"], input[type="email"], textarea {
             width: 100%;
             padding: 10px;

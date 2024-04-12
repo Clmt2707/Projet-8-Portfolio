@@ -120,6 +120,10 @@
             gap: 1rem;
             padding-top: 1rem;
 
+            @media screen and (max-width:390px){
+                gap: 0.3rem;
+            }
+
             button {
                 background-color: transparent; 
             }
@@ -130,7 +134,8 @@
                 object-fit: cover;
 
                 @media screen and (max-width:390px){
-                    width: 90%;
+                    width: 305px;
+                    height: 413px;
                 }
             }
         }
