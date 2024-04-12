@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -7,37 +7,49 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Portfolio de Clément Deboeuf, présentation des projets réalisés, des compétences acquises et formulaire de contact."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>Portfolio de Clément Deboeuf</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!--Rich snippets-->
+    <script type="application/ld+json">
+      {
+        '@context': "https://schema.org",
+        '@type': "Person",
+        "name" : "Deboeuf",
+        "jobTitle": " Développeur Web",
+        "email": "clement.deboeuf@gmail.com",
+        "adresss": {
+          "@type": "PostalAdress",
+          "adressLocality": "Belleville en Beaujolais",
+          "postalCode": "69220",
+          "adressCountry": "France"
+        },
+        "image": "../src/assets/clement_sticker.webp",
+        "url": "",
+        "description":"Je suis un développeur web passionné avec une expérience antérieure dans le domaine de la cuisine. Après une reconversion professionnelle réussie, j'ai choisi de me consacrer pleinement au développement web. Mon parcours diversifié m'a permis d'acquérir des compétences uniques et une perspective créative, ce qui me permet de concevoir et de développer des solutions web innovantes et efficaces."
+      }
+    </script>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Clément Deboeuf, Développeur web à Lyon.">
+    <meta property="og:description" content="Développeur web passionné offrant des solutions personnalisées pour créer des sites web élégants et fonctionnels. Contactez-moi pour concrétiser votre vision en ligne.">
+    <meta property="og:image" content="../src/assets/clement_sticker.webp">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:creator" content="@CleDbf">
+    <meta name="twitter:title" content="Clément Deboeuf, Développeur web à Lyon.">
+    <meta name="twitter:description" content="Développeur web passionné offrant des solutions personnalisées pour créer des sites web élégants et fonctionnels. Contactez-moi pour concrétiser votre vision en ligne.">
+    <meta name="twitter:image" content="../src/assets/clement_sticker.webp">
+    <meta name="twitter:url" content=""">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript aria-labelledby="noscript-label">You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
