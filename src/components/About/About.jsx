@@ -1,7 +1,7 @@
 import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
-
+import cv from '../../assets/Clément_Deboeuf_CV.pdf';
 const About = () => {
     return (
         <section id="about">
@@ -18,7 +18,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href={cv} target="_blank" rel="noopener noreferrer">
                         Voir mon Cv
                     </a>
                 </div>
