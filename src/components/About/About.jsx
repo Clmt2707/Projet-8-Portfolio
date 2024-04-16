@@ -1,9 +1,11 @@
 import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
-import cv from '../../static/media/Clément_Deboeuf_CV.pdf';
+/*import cv from '../../assets/Clément_Deboeuf_CV.pdf';*/
 
 const About = () => {
+    const cv = require('../../assets/Clément_Deboeuf_CV.pdf');
+
     return (
         <section id="about">
             <div className="about">
@@ -19,7 +21,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href={cv} target="_blank" rel="noopener noreferrer">
+                    <a href={cv.default} target="_blank" rel="noopener noreferrer">
                         Voir mon Cv
                     </a>
                 </div>
