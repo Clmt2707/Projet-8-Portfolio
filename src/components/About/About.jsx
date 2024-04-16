@@ -1,7 +1,8 @@
 import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
-import cv from '../../assets/Clément_Deboeuf_CV.pdf';
+import cv from '../../static/media/Clément_Deboeuf_CV.pdf';
+
 const About = () => {
     return (
         <section id="about">
