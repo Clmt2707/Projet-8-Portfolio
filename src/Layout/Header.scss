@@ -52,7 +52,7 @@
     cursor: pointer;
     padding: 10px;
     position: absolute;
-    top: 25%;
+    top: 15%;
     right: 0;
     z-index: 1100;
   }
@@ -64,12 +64,13 @@
 
     &__nav {
         position: fixed;
-        top: 40%;
+        top: 15%;
         right: 0;
         background: linear-gradient(to right,#000000, #434343);
         border-left: 2px solid #191919;
-        padding-left: 5px;
-        width: 40%;
+        padding: 20px;
+        width: 50%;
+        
         transition: transform 0.3s ease;
 
         max-height: 0;
@@ -88,6 +89,11 @@
         &.active {
             max-height: 200px;
             border-bottom: 2px solid #191919;
+        }
+
+        &.closed {
+            position: absolute;
+            top: -100%;
         }
     }
   }

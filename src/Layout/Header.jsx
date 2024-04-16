@@ -24,11 +24,9 @@ function Header() {
     return (
       <header className="header">
         <div className="header__logo">
-            <a href="home">
-                <img src={ image} alt="logo de clement deboeuf" />
-            </a>
+          <img src={ image} alt="logo de clement deboeuf" />
         </div>
-        <nav className={`header__nav ${isOpen ? 'active' : ''}`}>
+        <nav className={`header__nav ${isOpen ? 'active' : 'closed'}`}>
           <ul>
             <li><Link activeClass="active" to="home" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>Accueil</Link></li>
             <li><Link activeClass="active" to="about" spy smooth offset={offset} duration={500} onClick={() => setIsOpen(false)}>À propos</Link></li>

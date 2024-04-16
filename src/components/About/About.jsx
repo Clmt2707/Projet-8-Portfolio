@@ -14,7 +14,7 @@ const About = () => {
                     <div className="about__container__content">
                         <h3>Clément Deboeuf</h3>
                         <p>32 ans</p>
-                        <p>Cuisinier passionné depuis plus de huit ans, je me suis récemment lancé dans le développement web. Fusionnant expérience en cuisine et un fort intérêt pour le développement, j'apporte mon expérience en gestion du temps, en travail d'équipe et en souci du détail. Je suis constamment à la recherche de nouvelles opportunités pour apprendre et repousser mes limites.</p>
+                        <p>Cuisinier passionné pendant 7 ans, je me suis récemment reconverti dans le développement web. Mes précédentes expériences m'ont permis d'acquérir des compétences en gestion du temps, travail d'équipe et en souci du détail. Je suis constamment à la recherche de nouvelles opportunités pour apprendre et repousser mes limites.</p>
                     </div>
                 </div>
                 <div className="about__button">
