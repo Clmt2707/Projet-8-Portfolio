@@ -3,17 +3,11 @@ import emailjs from 'emailjs-com';
 import '../Contact/Contact.scss';
 
 const Contact = () => {
-    //variables dotenv emailjs
-    const serviceId = process.env.REACT_APP_SERVICE_ID;
-    const templateId = process.env.REACT_APP_TEMPLATE_ID;
-    const userId = process.env.REACT_APP_USER_ID;
-
-
     //fonction pour envoyer le formulaire
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(serviceId, templateId, e.target, userId)
+        emailjs.sendForm('service_k0aqn7g', 'template_mcpe7z2', e.target, '8ENjP2a7wrWmetp6g')
         .then((result) => {
             console.log(result.text);
             alert('Message bien envoyé !')

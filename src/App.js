@@ -7,6 +7,7 @@ import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact'
 import Footer from './Layout/Footer';
 
+
 function App () {
   return (
     <div className='app'>
