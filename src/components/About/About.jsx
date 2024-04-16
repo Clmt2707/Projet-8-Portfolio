@@ -1,10 +1,22 @@
 import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
-/*import cv from '../../assets/Clément_Deboeuf_CV.pdf';*/
+
 
 const About = () => {
-    const cv = require('../../assets/Clément_Deboeuf_CV.pdf');
+    const [cv, setCv] = React.useState(null);
+
+    React.useEffect(() => {
+        import ('../static/media/Clément_Deboeuf_CV.pdf')
+        .then((module) => {
+            setCv(module.default);
+        })
+        .catch((error) => {
+            console.error('Failed to load the CV:', error);
+            setCv('https://clementdeboeuf/static/media/Clément_Deboeuf_CV.pdf')
+        });
+    })
+
 
     return (
         <section id="about">
