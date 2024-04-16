@@ -21,7 +21,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href={cv.default} target="_blank" rel="noopener noreferrer">
+                    <a href={cv} target="_blank" rel="noopener noreferrer">
                         Voir mon Cv
                     </a>
                 </div>
