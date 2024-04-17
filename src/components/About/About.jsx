@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href="/Clément_Deboeuf_CV.pdf" target="_blank" rel="noopener noreferrer">Voir mon Cv</a>
+                    <a href="./Clément_Deboeuf_CV.pdf" target="_blank" rel="noopener noreferrer">Voir mon Cv</a>
                 </div>
             </div>
         </section>
