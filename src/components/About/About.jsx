@@ -1,11 +1,9 @@
 import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
-
+import cv from '../../assets/clement_deboeuf_cv.pdf';
 const About = () => {
 
-    const cv = `${window.location.origin}/static/Clément_Deboeuf_CV.pdf`;
-    
     return (
         <section id="about">
             <div className="about">
