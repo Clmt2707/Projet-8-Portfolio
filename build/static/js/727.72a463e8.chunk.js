@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[727],{727:(e,o,p)=>{e.exports=p.p+"static/media/Cl\xe9ment_Deboeuf_CV.8d69601a27a01ea7be6e.pdf"}}]);
