@@ -4,6 +4,8 @@ import photo  from '../../assets/clement_deboeuf.webp';
 
 const About = () => {
 
+    const cv = `${window.location.origin}/static/Clément_Deboeuf_CV.pdf`;
+    
     return (
         <section id="about">
             <div className="about">
@@ -19,7 +21,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href="./Clément_Deboeuf_CV.pdf" target="_blank" rel="noopener noreferrer">Voir mon Cv</a>
+                    <a href={cv} target="_blank" rel="noopener noreferrer">Voir mon Cv</a>
                 </div>
             </div>
         </section>
