@@ -23,21 +23,23 @@
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.02);
+        transform: scale(1.03);
 
         &::after {
-            content: "See more";
+            content: "Voir plus";
             position: absolute;
-            bottom: 10px;
-            right: 0;
-            color: #1C1D24;
-            font-size: 15px;
+            bottom: 2.5%;
+            right: 2.5%;
+            color: #f5f5f5;
+            font-size: 18px;
             font-weight: 600;
-            background-color: #d28d29;
+            background-color: rgba(25, 25, 25, 0.7);
             border-radius: 8px;
-            padding: 5px 0;
-            width: 100%;
-            text-align: center;
+            width: 95%;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 

@@ -2,21 +2,19 @@ import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
 
-
 const About = () => {
-    const [cv, setCv] = React.useState(null);
+    const [cv, setCV] = React.useState(null);
 
     React.useEffect(() => {
-        import ('../static/media/Clément_Deboeuf_CV.pdf')
+        import("../../assets/Clément_Deboeuf_CV.pdf")
         .then((module) => {
-            setCv(module.default);
+            setCV(module.default);
         })
         .catch((error) => {
-            console.error('Failed to load the CV:', error);
-            setCv('https://clementdeboeuf/static/media/Clément_Deboeuf_CV.pdf')
+            console.error("Failed to load the CV:", error);
+            setCV("https://clementdeboeuf.fr/static/media/Clément_Deboeuf_CV.pdf");
         });
-    })
-
+    }, []);
 
     return (
         <section id="about">
@@ -33,9 +31,8 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                    <a href={cv} target="_blank" rel="noopener noreferrer">
-                        Voir mon Cv
-                    </a>
+                <a href={`${cv}`} target="_blank" rel="noopener noreferrer">Voir mon Cv 
+                </a>
                 </div>
             </div>
         </section>
