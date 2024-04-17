@@ -1,14 +1,8 @@
-import React , { useEffect, useState }from "react";
+import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
 
 const About = () => {
-    const [cv, setCV] = useState(null);
-
-    useEffect(() => {
-        const cvPath="/Clément_Deboeuf_CV.pdf";
-        setCV(cvPath);
-    }, []);
 
     return (
         <section id="about">
@@ -25,8 +19,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about__button">
-                <a href={cv} target="_blank" rel="noopener noreferrer">Voir mon Cv 
-                </a>
+                    <a href="/Clément_Deboeuf_CV.pdf" target="_blank" rel="noopener noreferrer">Voir mon Cv</a>
                 </div>
             </div>
         </section>
