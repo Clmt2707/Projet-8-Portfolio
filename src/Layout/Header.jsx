@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.webp";
+/*import Logo from "../assets/logo.webp";*/
 import SmallLogo from "../assets/logo_small.webp";
 import "../Layout/Header.scss";
 import { Link } from "react-scroll";
@@ -18,13 +18,13 @@ function Header() {
     //Réglages d'offset pour les liens en fonciton de la taille d'écran
     const offset = window.innerWidth < 768 ? -90 : -100;
 
-    //Taille de logo en fonction de l'écran
-    const image = window.innerWidth <768 ? SmallLogo : Logo;
+   /* //Taille de logo en fonction de l'écran
+    const image = window.innerWidth <768 ? SmallLogo : Logo;*/
    
     return (
       <header className="header">
         <div className="header__logo">
-          <img src={ image} alt="logo de clement deboeuf" />
+          <img src={ SmallLogo} alt="logo de clement deboeuf" />
         </div>
         <nav className={`header__nav ${isOpen ? 'active' : 'closed'}`}>
           <ul>
