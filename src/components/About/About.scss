@@ -45,16 +45,11 @@
         }
 
         &__image {
-            flex: 1;
+           flex: 1;
 
             img {
                 border-radius: 50%;
-                @media screen and (max-width:1050px){
-                    width: 400px;
-                }
-                @media screen and (max-width:768px){
-                    width: 300px;
-                }
+                width: 80%;
             }
         }
 
@@ -62,7 +57,7 @@
             flex: 1;
             line-height: 23px;
             color: #fff;
-            padding: 10px 10px;
+            padding: 15px 10px;
             border-radius: 5px;
             background-color: #28282b;
 
