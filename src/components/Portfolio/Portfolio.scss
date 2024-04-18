@@ -137,11 +137,6 @@
                 width: 90%;
                 height: auto;
                 object-fit: cover;
-
-                @media screen and (max-width:390px){
-                    width: 305px;
-                    height: 413px;
-                }
             }
         }
     }
