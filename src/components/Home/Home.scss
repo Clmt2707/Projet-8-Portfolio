@@ -15,8 +15,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem 0 1.5rem;
-    /*background: #000000;  /* fallback for old browsers */
-    /*background: linear-gradient(to right,#000000, #434343);*/
     background-image: url('../../assets/background.webp');
     background-position: center;
     background-size: cover;
@@ -69,7 +67,7 @@
             padding: 0;
         }
     }
-  
+  //style liens réseaux sociaux, avec animation au survol
     .socials {
         position: absolute;
         bottom: 0;

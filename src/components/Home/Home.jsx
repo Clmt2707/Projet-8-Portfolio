@@ -3,6 +3,8 @@ import "../Home/Home.scss";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import photo from '../../assets/clement_sticker.webp';
 
+//Section Home(page d'accueil)
+
 const Home = () => {
     return (
         <section id="home">

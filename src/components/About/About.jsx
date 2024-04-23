@@ -2,6 +2,9 @@ import React from "react";
 import '../About/About.scss';
 import photo  from '../../assets/clement_deboeuf.webp';
 import cv from '../../assets/clement_deboeuf_cv.pdf';
+
+//Section À propos
+
 const About = () => {
 
     return (

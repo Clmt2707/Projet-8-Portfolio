@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
+//Création des liens réseaux sociaux, utlisation des icones FontAwesome
+
 const SocialLinks = () => {
     return (
         <div className="socials">    

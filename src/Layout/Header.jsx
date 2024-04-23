@@ -14,6 +14,7 @@ function Header() {
       setIsOpen(!isOpen);
     };
 
+    //gestion de l'offset en fonction de la taille d'écran
     const offset = window.innerWidth < 768 ? -90 : -100;
 
     return (
