@@ -2,7 +2,6 @@ import React from "react";
 import '../Projet/Projet.scss';
 
 //Affichage d'un projet dans la section Portfolio
-//affiche l'image et le titre du projet
 
 const Project = ({ projet, onClick }) => {
     return(

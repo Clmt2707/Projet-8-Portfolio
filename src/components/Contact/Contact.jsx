@@ -7,6 +7,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        //envoi des données et gestion des promesses renvoyées
         emailjs.sendForm('service_k0aqn7g', 'template_mcpe7z2', e.target, '8ENjP2a7wrWmetp6g')
         .then((result) => {
             console.log(result.text);
@@ -16,7 +17,7 @@ const Contact = () => {
             alert('Une erreur s\'est produite lors de l\'envoi ! Veuillez réessayer !' )
         });
 
-        //réinitialisation du formualire après l'envoi
+        //réinitialisation du formulaire après l'envoi
         e.target.reset();
     };
 

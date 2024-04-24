@@ -7,7 +7,7 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const Portfolio = () => {
-    //États de la modale/index d'image/projet
+    //États de la modale/index d'image/projet sélectionné
     const [showModal, setShowModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,11 +38,17 @@ const Portfolio = () => {
     return (
         <section id="portfolio">
             <h2>Projets</h2>
+
+            {/* Affichage des différents projets dans la section,
+                Récupération des données dans le fichier json
+                Appel au composant Project */}
             <div className="portfolio">
                 {projetsData.map((projet, index) => (
                     <Project key={index} projet={projet} onClick={() => openModal(projet)} />
                 ))}
             </div>
+
+            {/* Affichage de la modale */}
             {showModal && selectedProject && (
                 <div className='modal'>
                         <button className='closeButton' onClick={closeModal}>x</button>
@@ -53,6 +59,8 @@ const Portfolio = () => {
                                 <li key={index}>{tech}</li>
                             ))}
                         </ul>
+
+                        {/* Création du carrousel d'image dans la modale */}
                         <div className='carousel'>
                             <button onClick={prevImage}>
                                 <FontAwesomeIcon icon={faAngleLeft} />
