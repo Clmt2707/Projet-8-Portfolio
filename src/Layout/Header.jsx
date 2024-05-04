@@ -6,7 +6,7 @@ import { useState } from "react";
 import Hamburger from 'hamburger-react';
 
 function Header() {
-    //Gestion de l'état du menu hamburger
+    //Gestion de l'état du menu hamburger pour les écrans inférieurs à 769px
     const [isOpen, setIsOpen] = useState(false);
    
     //fonction de bascule de l"état
@@ -39,3 +39,5 @@ function Header() {
   }
 
 export default Header;
+   
+   
