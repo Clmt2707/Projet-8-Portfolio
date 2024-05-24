@@ -37,7 +37,16 @@
     },
 
     {
-        "title":"Mon vieux grimoire",
+        "title": "Bubble",
+        "image": "Bubble/bubble1.webp",
+        "description": "Création d'un generateur aléatoire de bulles de tailles et de couleurs différentes Les bulles sont générés de manière aléatoires (taille, position, couleur), possibilité d'exploser les bulles en cliquant sur celle ci, compteur de bulles explosées.",
+        "techno": ["Javascript", "CSS"],
+        "github": "https://github.com/Clmt2707/Bubble.git",
+        "images": ["Bubble/bubble1.webp", "Bubble/bubble2.webp"]
+    },
+
+    {
+        "title":"Mon vieux Grimoire",
         "image":"Mon_vieux_grimoire/Grimoire3.webp",
         "description":"Dans ce projet pour un site de notation de livres Mon vieux Grimoire, je suis responsable du back-end. Création du serveur avec Express, connexion à la base de donnée et modélisation des données avec Mongoose. Mise en place des opérations CRUD en suivant l'architecture MVC. Sécurisation des données, gestion du téléchargement des fichiers et optimisation des images. Green Code appliqué au projet.",
         "techno":["Express", "Mongoose", "MVC", "Green Code"],
