@@ -17,7 +17,6 @@ const About = () => {
                     </div>
                     <div className="about__container__content">
                         <h3>Clément Deboeuf</h3>
-                        <p>32 ans</p>
                         <p>Fort d'une expérience de 7 ans en tant que cuisinier passionné, j'ai récemment entrepris une reconversion réussie dans le domaine du développement web. Mes années passées en cuisine m'ont doté de compétences solides en gestion du temps, travail d'équipe et résolution de problèmes. Cette transition m'a permis d'acquérir de nouvelles compétences en développement et en conception de sites web. Mon désir constant d'apprendre et ma volonté de relever de nouveaux défis continuent de me motiver dans cette nouvelle voie.</p>
                     </div>
                 </div>
