@@ -20,7 +20,7 @@ const SocialLinks = () => {
                 </li>
                 <li>
                     <a
-                        href="https://www.linkedin.com/in/clément-deboeuf-0b02292ab"
+                        href="https://www.linkedin.com/in/clement-deboeuf-web-frontend"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Linkedin Profile"

@@ -9,7 +9,7 @@ const Skill = ({ name, icon }) => {
         <div className="skill">
             <FontAwesomeIcon icon={icon} className="skill__icon" />
             <span>{name}</span>
-        </div>
+        </div> 
     );
 }
 
